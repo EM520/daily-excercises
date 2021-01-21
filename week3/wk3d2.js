@@ -1,7 +1,7 @@
 // Q1
 // Use Map to increment all numbers in the array (arr) by 1
 let arr = [1, 2, 3, 4, 5, 6];
-newArr=arr.map((item)=> item+1)
+let newArr=arr.map((item)=> item+1)
 console.assert(JSON.stringify(newArr) == JSON.stringify([2, 3, 4, 5, 6, 7]));
 // Q2
 // Use Filter to find all even numbers in an array
