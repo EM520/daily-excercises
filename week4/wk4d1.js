@@ -36,7 +36,7 @@ if (book.genre.includes("Mystery")){
 //Q4
 //set o4 to a function that checks if the object "book" is released
 //after 2012, if so have it return true
-let o4 = function(){
+let o4 = function(book){
   if (book.release>2012){
     return true
   }
@@ -49,9 +49,11 @@ console.assert(o4(book) == true);
 //found in the object "book"
 //hint: for in loop
 let o5= function(a){
-  for (let i=0; i < a.length; i++){
-    return i
+  let count=0
+  for (let key in a){
+      count++
   }
+  return count
 };
 
 console.assert(o5(book) == 6);
