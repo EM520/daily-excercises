@@ -59,15 +59,13 @@ console.assert(
 // 0 factorial is 1
 // etc...
 function factorial(number) {
-let result=1
-for (let i=number;i>=1;i--){
-    result=result*i
-}
-return result
-}
-console.assert(factorial(5) === 120)
-console.assert(factorial(4) === 24)
-console.assert(factorial(3) === 6)
+    let result=1
+    for (let i=number;i>=1;i--){
+        result=result*i
+    }
+    return result
+    }
+
 // make a function grabKey
 // that takes an object and a string and grabs the key of the object
 function grabKey(obj, key) {
@@ -109,10 +107,10 @@ console.assert(minutesToSeconds(2) === 120)
 function collectLetters(str) {
 let obj={}
 for (let letter of str){
-    if (!obj[letter]){
+    if (!obj[letter]){  //if letter not exsit in obj give obj[letter]=1 to obj
         obj[letter]=1
     }else {
-        obj[letter]++
+        obj[letter]++  //if letter exsit in obj already give obj[letter]+1 to obj
     }  
 }
 return obj
